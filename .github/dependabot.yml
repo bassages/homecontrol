@@ -1,0 +1,28 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.springframework.boot
+    versions:
+    - 2.4.2
+    - 2.4.3
+  - dependency-name: nl.jqno.equalsverifier:equalsverifier
+    versions:
+    - 3.5.2
+    - 3.5.3
+  - dependency-name: org.sonarqube
+    versions:
+    - 3.1.1
+  - dependency-name: org.projectlombok:lombok
+    versions:
+    - 1.18.18
+  - dependency-name: org.assertj:assertj-core
+    versions:
+    - 3.19.0
+  - dependency-name: io.spring.dependency-management
+    versions:
+    - 1.0.11.RELEASE
